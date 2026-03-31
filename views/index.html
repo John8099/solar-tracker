@@ -202,8 +202,8 @@
         width: 10px;
         height: 10px;
         border-radius: 50%;
-        background: currentColor;
-        box-shadow: 0 0 0 6px rgba(24, 119, 242, 0.08);
+        background: #42b72a;
+        box-shadow: 0 0 0 6px rgba(66, 183, 42, 0.16);
       }
 
       .list-grid {
@@ -289,7 +289,8 @@
           height: 220px;
         }
 
-        .status-pill {
+        .status-pill,
+        .nav-chip {
           width: 100%;
           justify-content: center;
           text-align: center;
@@ -347,7 +348,7 @@
               </p>
               <div class="d-flex flex-wrap gap-3 align-items-center">
                 <div class="status-pill">
-                  <span class="status-dot"></span>
+                  <span class="status-dot text-success bg-success"></span>
                   <span id="connectionState">Waiting for data</span>
                 </div>
                 <a class="nav-chip" href="/reports">View reports</a>
