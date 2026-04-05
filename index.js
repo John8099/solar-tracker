@@ -79,8 +79,12 @@ app.get("/api", (req, res) => {
   });
 });
 
-app.get("/dashboard", (req, res) => {
+app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "views", "index.html"));
+});
+
+app.get("/dashboard", (req, res) => {
+  res.sendFile(path.join(__dirname, "views", "dashboard.html"));
 });
 
 app.get("/reports", (req, res) => {
